@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>bai4</title>
+</head>
+<body>
+<script>
+    let mang=[[1, 1], [2, 2]];
+    let a;
+    a=soDuongCheo(mang);
+    document.write("tổng đường chéo ma trận vuông là :"+a);
+    function soDuongCheo(somang) {
+        let sum=0;
+        for(let i=0;i<somang.length;i++){
+            for(let j=0;j<somang[i].length;j++){
+                if(i==j){
+                    sum+=somang[i][j];
+
+                }
+            }
+        }
+        return sum;
+
+    }
+</script>
+</body>
+</html>

@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>bai3</title>
+</head>
+<body>
+<script>
+    let tuoi;
+    let hientai = 2020;
+    let namsinh=Number(prompt("nhập vào năm sinh của bạn: "));
+    let ketqua=sotuoi(namsinh);
+    document.write("số tuổi của bạn là: "+ketqua);
+    function sotuoi(namsinh) {
+        if (namsinh>hientai){
+            alert("năm sinh không hợp lệ");
+        }
+        tuoi= hientai-namsinh;
+        return tuoi;
+    }
+</script>
+</body>
+</html>
